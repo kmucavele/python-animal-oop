@@ -4,9 +4,6 @@ class AnimalBehaviour:
     def sleep(self) -> None:
         pass
 
-    def move(self) -> None:
-        pass
-
     def eat(self) -> None:
         pass
 

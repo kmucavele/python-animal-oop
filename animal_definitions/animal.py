@@ -66,10 +66,6 @@ class Animal(AnimalBehaviour, ABC):
         return f"{self.name} ({self.species}) is "
 
     @abstractmethod
-    def move(self) -> None:
-        pass
-
-    @abstractmethod
     def play(self) -> None:
         pass
 
