@@ -63,6 +63,10 @@ class Animal(AnimalBehaviour, ABC):
         print(f"{self.name} ({self.__name.__class__}) is eating {self.diet}")
 
     @abstractmethod
+    def move(self) -> str:
+        pass
+
+    @abstractmethod
     def play(self) -> str:
         pass
 
