@@ -60,10 +60,10 @@ class Animal(AnimalBehaviour, ABC):
         print(f"{self.name} ({self.__name.__class__}) is sleeping")
 
     def eat(self) -> None:
-        print(f"{self.__action_str_prefix()} eating {self.diet.value}")
+        print(f"{self._action_str_prefix()} eating {self.diet.value}")
 
-    def __action_str_prefix(self) -> str:
-        return f"{self.name} ({self.species}) is "
+    def _action_str_prefix(self) -> str:
+        return f"{self.name} ({self.species}) is"
 
     @abstractmethod
     def move(self) -> None:
