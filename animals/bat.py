@@ -17,10 +17,13 @@ class Bat(FlyingAnimals):
         print(f"{self.sleep()} upsidedown")
 
     def defend(self) -> None:
-        print(f"{self._action_str_prefix()} defending its territory")
+        print(f"{self._action_str_prefix()} is not defending itself, because all predators are asleep at night")
 
     def make_sound(self) -> None:
-        print(f"{self.name}: 'Screech!'")
+        print(f"{self.name}: 'Squeak!'")
+
+    def clean_wings(self) -> None:
+        print(f"{self._action_str_prefix()} cleaning its wings")
 
     def turn_into_a_vampire(self) -> None:
         self.__species = "🧛🏻"
