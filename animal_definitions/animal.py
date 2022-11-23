@@ -57,7 +57,7 @@ class Animal(AnimalBehaviour, ABC):
         self.is_alive = is_alive
 
     def sleep(self) -> None:
-        print(f"{self.name} ({self.__name.__class__}) is sleeping")
+        print(f"{self._action_str_prefix()} sleeping")
 
     def eat(self) -> None:
         print(f"{self._action_str_prefix()} eating {self.diet.value}")
