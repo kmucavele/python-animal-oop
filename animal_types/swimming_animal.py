@@ -6,7 +6,7 @@ from animal_definitions.diet import Diet
 from animal_definitions.gender import Gender
 
 
-class SwimmingAnimals(Animal, ABC):
+class SwimmingAnimals(Animal):
     def __init__(self, name: str, gender: Gender, species: str, diet: Diet, birthday: date, is_alive: bool):
         super().__init__(name, gender, species, diet, birthday, is_alive)
 
@@ -14,13 +14,5 @@ class SwimmingAnimals(Animal, ABC):
         print(self._action_str_prefix() + " swimming")
 
     @abstractmethod
-    def play(self) -> None:
-        pass
-
-    @abstractmethod
-    def defend(self) -> None:
-        pass
-
-    @abstractmethod
-    def make_sound(self) -> None:
+    def move(self) -> None:
         pass
