@@ -1,20 +1,20 @@
 # informal interface
 
 class AnimalBehaviour:
-    def sleep(self) -> str:
+    def sleep(self) -> None:
         pass
 
-    def move(self) -> str:
+    def move(self) -> None:
         pass
 
-    def eat(self) -> str:
+    def eat(self) -> None:
         pass
 
-    def play(self) -> str:
+    def play(self) -> None:
         pass
 
-    def defend(self) -> str:
+    def defend(self) -> None:
         pass
 
-    def make_sound(self) -> str:
+    def make_sound(self) -> None:
         pass
