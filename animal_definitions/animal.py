@@ -7,7 +7,7 @@ from animal_definitions.diet import Diet
 
 class Animal(AnimalBehaviour, ABC):
 
-    def __init__(self, name: str, gender: Gender, species: str, diet: Diet, birthday: date, is_alive: bool):
+    def __init__(self, name: str, gender: Gender, species: str, diet: Diet, birthday: date):
         self.__name = name
         self.__gender = gender
         self.__species = species
@@ -43,39 +43,39 @@ class Animal(AnimalBehaviour, ABC):
     def has_birthday(self) -> None:
         self.__birthday += 1
 
-    def get_age(self):
-        days = (self.__birthday - date.today())
-        return days // 365
+    def get_age(self) -> int:
+        days = (date.today() - self.__birthday)
+        return (days // 365).days
 
     @property
-    def is_alive(self) -> None:
-        return self.is_alive
+    def is_alive(self) -> bool:
+        return self.__is_alive
 
     @is_alive.setter
     def is_alive(self, is_alive: bool) -> None:
         assert isinstance(is_alive, bool), "Is alive value must be a boolean"
-        self.is_alive = is_alive
+        self.__is_alive = is_alive
 
-    def sleep(self) -> None:
+    def sleep(self):
         print(f"{self._action_str_prefix()} sleeping")
 
-    def eat(self) -> None:
+    def eat(self):
         print(f"{self._action_str_prefix()} eating {self.diet.value}")
 
     def _action_str_prefix(self) -> str:
         return f"{self.name} ({self.species}) is"
 
     @abstractmethod
-    def play(self) -> None:
+    def play(self):
         pass
 
     @abstractmethod
-    def defend(self) -> None:
+    def defend(self):
         pass
 
     @abstractmethod
-    def make_sound(self) -> None:
+    def make_sound(self):
         pass
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"Animal({self.name}, {self.gender}, {self.species}, {self.birthday}, {self.is_alive})"
