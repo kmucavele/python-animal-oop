@@ -7,13 +7,12 @@ from animal_types.swimming_animal import SwimmingAnimals
 
 
 class FlyingFish(FlyingAnimals, SwimmingAnimals):
-    def __init__(self, name: str, gender: Gender, species: str, diet: Diet, birthday: date, is_alive: bool,
-                 lays_eggs: bool):
-        super().__init__(name, gender, species, diet, birthday, is_alive, True)
+    def __init__(self, name: str, gender: Gender, species: str, diet: Diet, birthday: date):
+        super().__init__(name, gender, species, diet, birthday, True)
 
     def fly(self) -> None:
         self.__jump()
-        print(f"And glides")
+        print(f"and glides")
 
     def move(self) -> None:
         pass
@@ -33,10 +32,10 @@ class FlyingFish(FlyingAnimals, SwimmingAnimals):
 
     def breath(self) -> None:
         self.__jump()
-        print(f"And takes a deep breath")
+        print(f"and takes a deep breath")
 
     def __jump(self):
-        print(f"{self._action_str_prefix()} jumping out of the water")
+        print(f"{self._action_str_prefix()} jumping out of the water", end=" ")
 
     def spread_wings_underwater(self) -> None:
         print(f"{self._action_str_prefix()} spreading its wings underwater")
