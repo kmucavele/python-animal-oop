@@ -6,8 +6,8 @@ from animal_types.swimming_animal import SwimmingAnimals
 
 
 class Octopus(SwimmingAnimals):
-    def __init__(self, name: str, gender: Gender, species: str, diet: Diet, birthday: date, is_alive: bool):
-        super().__init__(name, gender, species, diet, birthday, is_alive)
+    def __init__(self, name: str, gender: Gender, species: str, diet: Diet, birthday: date):
+        super().__init__(name, gender, species, diet, birthday)
         self.__arms: int = 8
 
     @property
