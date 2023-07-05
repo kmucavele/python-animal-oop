@@ -2,9 +2,9 @@
 
 
 ## Description
-This project represents a virtual zoo, written in a object-oriented way.
+This project represents a virtual zoo, written in an object-oriented way.
 The content is divided into various modules that cover animal abstractions, including definitions, types, enclosures, and the animals themselves.
-It was created to explore the object-oriented programming strategies in Python, while coming from a Java background.
+It was created to explore and show some object-oriented programming strategies in Python, while coming from a Java background.
 Especially, how encapsulation, abstraction, inheritance and polymorphism can be implemented in Python.
 
 
@@ -13,7 +13,7 @@ Interesting Concepts used in this project:
   * Abstract Base Class (ABC classes)
 * Method Decorators for properties and abstract methods:
   * `@foo_setter.setter` or `@abstractmethod`
-* Dunder Methods or Magic Method for human readable object representation: `def __repr__()`
+* Dunder Methods or Magic Method for human-readable object representation: `def __repr__()`
 
-The entry point is [Zoo.py](Zoo.py) and has some example code.
+Entry point of the project is [Zoo.py](Zoo.py) and has some example code.
 The project was made in the second year of my apprenticeship and is based on a Java Assignment.
