@@ -1,5 +1,4 @@
 from enclosures.enclosure import Enclosure
-from enclosures.enclosure_list import EnclosureIndex
 from enclosures.enclosure_size import Size
 
 
@@ -15,5 +14,3 @@ class TerrestrialEnclosure(Enclosure):
     @property
     def terrain(self):
         return self.__terrain
-
-

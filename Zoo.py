@@ -1,9 +1,7 @@
 from datetime import date
 
-from animal_definitions.animal import Animal
 from animal_definitions.diet import Diet
 from animal_definitions.gender import Gender
-from animal_types.swimming_animal import SwimmingAnimals
 from animals.bat import Bat
 from animals.flying_fish import FlyingFish
 from animals.leopard import Leopard
@@ -27,9 +25,9 @@ if __name__ == '__main__':
     octopus_aquarium.add_animal(octopus_lisa)
     print(octopus_aquarium)
 
-    # print("Trying to add: Leo to the Octopus aquarium: ")
-    # octopus_aquarium.add_animal(leopard_leo)
-    # print(octopus_aquarium)
+    print("Trying to add: Leo to the Octopus aquarium: ")
+    octopus_aquarium.add_animal(leopard_leo)
+    print(octopus_aquarium)
 
     print("Adding: Lonny to the Octopus aquarium: ")
     octopus_aquarium.add_animal(octopus_lonny)
@@ -46,18 +44,17 @@ if __name__ == '__main__':
     # ENCAPSULATION, INHERITANCE
     print(f"Species of Lisa: {octopus_lisa.species}")
     # returns an AttributeError: can't set attribute
-    # octopus_lisa.species = "Bat"
+    octopus_lisa.species = "Bat"
 
     print(f"Walters gender: {flying_fish_walter.gender}")
     # returns an assertions error
-    # flying_fish_walter.gender = "Female"
+    flying_fish_walter.gender = "Female"
 
     flying_fish_walter.gender = Gender.FEMALE
     print(f"Walters new gender: {flying_fish_walter.gender}")
 
     # ABSTRACTION
     print(f"Get Waters age: {flying_fish_walter.get_age()}")
-
 
     print("Turn Betty into a vampire")
     bat_betty.turn_into_a_vampire()

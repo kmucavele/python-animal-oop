@@ -39,4 +39,3 @@ class FlyingFish(FlyingAnimals, SwimmingAnimals):
 
     def spread_wings_underwater(self) -> None:
         print(f"{self._action_str_prefix()} spreading its wings underwater")
-

@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-from animal_definitions.animal import Animal
 from enclosures.enclosure_list import EnclosureIndex
 from enclosures.enclosure_size import Size
 

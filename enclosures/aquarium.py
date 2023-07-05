@@ -1,5 +1,4 @@
 from enclosures.enclosure import Enclosure
-from enclosures.enclosure_list import EnclosureIndex
 from enclosures.enclosure_size import Size
 
 

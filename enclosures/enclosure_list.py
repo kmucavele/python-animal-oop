@@ -10,8 +10,9 @@ class EnclosureIndex:
         return self.__animal_list
 
     def add_animal(self, animal):
-        assert issubclass(animal.__class__, self.__animal_species), f"This enclosure only can hold animals of type: " \
-                                                   f"{self.__animal_species.__name__} "
+        assert issubclass(animal.__class__, self.__animal_species), \
+            f"This enclosure only can hold animals of type: " \
+            f"{self.__animal_species.__name__} "
         self.__animal_list.add(animal)
 
     def remove_animal(self, animal):

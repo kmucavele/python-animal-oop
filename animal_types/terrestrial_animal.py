@@ -7,7 +7,7 @@ from animal_definitions.gender import Gender
 
 
 class TerrestrialAnimal(Animal):
-    def __init__(self, name: str, gender: Gender, species: str, diet: Diet, birthday: date, legs: int,  has_tail: bool):
+    def __init__(self, name: str, gender: Gender, species: str, diet: Diet, birthday: date, legs: int, has_tail: bool):
         super().__init__(name, gender, species, diet, birthday)
         self.__has_tail = has_tail
         self.__legs = legs

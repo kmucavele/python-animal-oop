@@ -35,5 +35,3 @@ class Octopus(SwimmingAnimals):
     def grow_arm_back(self) -> None:
         assert self.__arms < 8, f"{self.name} already has its 8 arms"
         self.__arms += 1
-
-
