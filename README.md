@@ -18,3 +18,9 @@ Interesting Concepts used in this project:
 
 Entry point of the project is [Zoo.py](Zoo.py) and has some example code.
 The project was made in the second year of my apprenticeship and is based on a Java Assignment.
+
+## Usage
+Simply clone this repository run [Zoo.py](Zoo.py) or/and feel free to experiment with the other classes.
+
+### Prerequisites
+* Python 3 or higher is recommended. (The project only uses built-in libraries)
