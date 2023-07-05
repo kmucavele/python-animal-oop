@@ -9,11 +9,12 @@ Especially, how encapsulation, abstraction, inheritance and polymorphism can be 
 
 
 Interesting Concepts used in this project:
-* Multiple inheritance, which is non-existing in most programming languages
-  * Abstract Base Class (ABC classes)
+* Multiple inheritance, which is non-existing in most programming languages:
+  * with Abstract Base Class (ABC classes)
 * Method Decorators for properties and abstract methods:
   * `@foo_setter.setter` or `@abstractmethod`
-* Dunder Methods or Magic Method for human-readable object representation: `def __repr__()`
+* Dunder Methods or Magic Method for human-readable object representation: 
+  * `def __repr__()`
 
 Entry point of the project is [Zoo.py](Zoo.py) and has some example code.
 The project was made in the second year of my apprenticeship and is based on a Java Assignment.
