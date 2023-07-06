@@ -7,7 +7,7 @@ The content is divided into various modules that cover animal abstractions, incl
 It was created to explore and show some object-oriented programming strategies in Python, while coming from a Java background.
 Especially, how encapsulation, abstraction, inheritance and polymorphism can be implemented in Python.
 
-The project was made in the second year of my apprenticeship and servers for demonstrative purposes. It is based on a Java Assignment.
+The project was made in the second year of my apprenticeship and serves to showcase work samples. It is based on a Java Assignment.
 
 
 Interesting Concepts used in this project:
