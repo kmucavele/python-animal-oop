@@ -7,6 +7,8 @@ The content is divided into various modules that cover animal abstractions, incl
 It was created to explore and show some object-oriented programming strategies in Python, while coming from a Java background.
 Especially, how encapsulation, abstraction, inheritance and polymorphism can be implemented in Python.
 
+The project was made in the second year of my apprenticeship and servers for demonstrative purposes. It is based on a Java Assignment.
+
 
 Interesting Concepts used in this project:
 * Multiple inheritance, which is non-existing in most programming languages:
@@ -17,7 +19,6 @@ Interesting Concepts used in this project:
   * `def __repr__()`
 
 Entry point of the project is [Zoo.py](Zoo.py) and has some example code.
-The project was made in the second year of my apprenticeship and servers for educational purposes. It is based on a Java Assignment. 
 
 ## Usage
 Simply clone this repository run [Zoo.py](Zoo.py) or/and feel free to experiment with the other classes.
