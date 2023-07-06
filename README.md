@@ -17,7 +17,7 @@ Interesting Concepts used in this project:
   * `def __repr__()`
 
 Entry point of the project is [Zoo.py](Zoo.py) and has some example code.
-The project was made in the second year of my apprenticeship and is based on a Java Assignment.
+The project was made in the second year of my apprenticeship and servers for educational purposes. It is based on a Java Assignment. 
 
 ## Usage
 Simply clone this repository run [Zoo.py](Zoo.py) or/and feel free to experiment with the other classes.
